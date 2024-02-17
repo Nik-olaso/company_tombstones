@@ -1,0 +1,122 @@
+{% load static %}
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orelega+One&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Rubik+Doodle+Shadow&family=Unbounded:wght@200..900&display=swap');
+
+ 
+    html,body{ 
+        background-image: url("https://i.pinimg.com/736x/4c/69/fc/4c69fcfbb5bec7ad37c4ef03e357d99d.jpg");
+        background-size: cover;
+        margin: 0;
+        padding:0;
+    }
+ 
+
+    .head{
+        background-color: #000000;
+        text-align: center;
+    }
+
+
+    h1{
+        margin:0;
+        color: #a54d12!important;
+        font-size: 40px;
+        z-index: 1;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 450;
+        text-shadow: 2px 0 2px #34d55c,
+        0 2px 2px #34d55c, 
+        -2px 0 2px #34d55c, 
+        0 -2px 2px #34d55c; 
+ 
+    }
+ 
+
+    .tombstone_block{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top:2vh;
+        background-image: url("{% static 'pictures/brown.jpg' %}");
+        background-size: cover;
+        border-radius: 10%;
+        margin-left: 3vw;
+        width: 20vw;
+        height: 20vw;
+    }
+
+
+    .tombstone_image{
+        position: relative;
+        height: 10vw;
+    }
+
+
+    .tombstone_image img{
+        width: 30vw;
+    }
+ 
+
+    .tombstone_logo {
+        position: absolute;
+        margin-top: 5vh;
+    }
+
+
+    .tombstone_logo img{
+        width:8vw;
+        height:8vh;
+    }
+
+
+    .tombstone_text{
+        text-align:center;
+        color: #000000;
+        font-weight: 900;
+        font-size: 20px;
+        font-family: "Unbounded", sans-serif; 
+        text-shadow: 1px 0 1px #34d55c,
+            0 1px 1px #34d55c, 
+            -1px 0 1px #34d55c, 
+            0 -1px 1px #34d55c; 
+    }
+ 
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+
+    @media screen and (max-width: 1400px) {
+        .tombstone_block{
+            width: 90vw;
+            height: 40vh;
+        }
+
+
+        .tombstone_image{
+            height: 30vh;
+        }
+
+
+        .tombstone_image img{
+            width: 90vw;
+            height: 30vh;
+        }
+        .tombstone_logo {
+            position: absolute;
+            height:15vh;
+        }
+
+
+        .tombstone_logo img{
+            width:15vw;
+            height:10vh;
+        }
+ 
+}
+
+    
+</style>
